@@ -181,7 +181,7 @@ local function run(msg,matches)
     	for k,v in pairs(jdat) do
   		redis:hset('user:'..v, 'print_name', k)
   		banall_user(v)
-      		print(k, v.." Globally banned")
+      		print(k, v.." بن جهانی شد")
     	end
     end
     return
